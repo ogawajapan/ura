@@ -49,7 +49,7 @@
       resultDiv.textContent = `${yourName}さんと${partnerName}さんの相性は: ${randomFortune}`;
 
       // Google Apps Script にデータを送信
-      const response = await fetch("https://script.google.com/macros/s/AKfycby-wqNb5aHEjujCNGDCNkdrF6SJUxYcSPpLC532vRifpsBZ46pvAAg8fUh-rxFL5CIq/exec"), {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbySI1yX-MMa1Kp1TQJNCh4uPpdsPDSHhQ5stAcESQD5ttLkLMxDuXqIzgWMSRoOWoAj/exec"), {
         method: "POST",
         body: JSON.stringify({ yourName, partnerName }),
         headers: { "Content-Type": "application/json" }
